@@ -7,6 +7,13 @@
     overflow: hidden;
 }
 
+.gr_txt {
+    color: transparent;
+    text-shadow: 1px 0 3px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(to right top, #0a96ba, #032777, #333333);
+    background-clip: text;
+}
+
 .mb8 {
     margin-bottom: 8px;
 }
