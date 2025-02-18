@@ -14,6 +14,66 @@
     background-clip: text;
 }
 
+.table {
+    width: 100%;
+    border-top: 2px solid #da544b;
+}
+
+.table td {
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 0 24px;
+}
+
+.dot_list {}
+
+.dot_list>* {
+    position: relative;
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 24px;
+
+    word-break: keep-all;
+}
+
+.dot_list>*::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+
+    width: 2px;
+    height: 2px;
+
+    background: #da544b;
+
+}
+
+.hr {
+    position: relative;
+    display: block;
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+    overflow: visible;
+}
+
+.hr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 40px;
+    height: 40px;
+
+    background: #ddd url(../../images/user-plus.svg) no-repeat center center;
+    border-radius: 50%;
+}
+
 .mb8 {
     margin-bottom: 8px;
 }

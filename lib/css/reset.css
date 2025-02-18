@@ -52,9 +52,16 @@ button {
     border: none;
     border: 0;
     cursor: pointer;
+
+    color: inherit;
 }
 
 p {
     line-height: 1.5;
     word-break: keep-all;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
