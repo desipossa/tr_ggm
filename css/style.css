@@ -367,7 +367,7 @@
 }
 
 
-.page {
+.subpage .page {
     background: #f9f9f9;
     border-bottom: 1px solid var(--line-color);
     height: 40px;
@@ -378,17 +378,17 @@
 }
 
 
-.sub {
+.subpage .sub_wrap {
     display: flex;
 }
 
-.sub .content {
+.subpage .content {
     flex: 3;
 
     padding: 40px 40px 80px 0;
 }
 
-.sub .content h2 {
+.subpage .content h2 {
     font-size: 24px;
     font-weight: 600;
     border-bottom: 1px solid #337689;
@@ -397,25 +397,25 @@
     margin-bottom: 40px;
 }
 
-.sub .content h2 span {
+.subpage .content h2 span {
     font-size: 16px;
     font-weight: 400;
     color: #666;
 }
 
-.sub .content h2 span::before {
+.subpage .content h2 span::before {
     content: "/";
     margin: 0 16px;
 }
 
-.sub .content .title {
+.subpage .content .title {
     position: relative;
     padding: 80px 0 80px 80px;
     background: url(../images/main_slider01.jpg) no-repeat right top/cover;
     margin-bottom: 80px;
 }
 
-.sub .content .title::before {
+.subpage .content .title::before {
     content: "";
     position: absolute;
     inset: 0 0 0 0;
@@ -423,7 +423,7 @@
     opacity: 0.5;
 }
 
-.sub .content .title::after {
+.subpage .content .title::after {
     content: "";
     position: absolute;
     top: 0;
@@ -435,30 +435,30 @@
     background: #337689;
 }
 
-.sub .content .title .txt_box {
+.subpage .content .title .txt_box {
     position: relative;
 }
 
-.sub .content .title .txt_box img {
+.subpage .content .title .txt_box img {
     height: 40px;
     margin-bottom: 16px;
 }
 
-.sub .content .title .txt_box strong {
+.subpage .content .title .txt_box strong {
     display: block;
     font-size: 64px;
     font-weight: 800;
     margin-bottom: 16px;
 }
 
-.sub .desc strong {
+.subpage .desc strong {
     display: block;
     line-height: 24px;
     font-size: 18px;
     font-weight: 500;
 }
 
-.sub .desc strong::after {
+.subpage .desc strong::after {
     content: "";
     display: block;
     width: 80px;
@@ -466,16 +466,39 @@
 
     background: #337689;
 
-    margin-top: 24px;
+    margin: 24px 0;
 }
 
-.sub .desc .cm {
+.subpage .desc p {
+    margin-bottom: 24px;
+}
+
+.subpage .desc .cm {
     font-weight: 600;
 }
 
-.sub .side {
+.subpage .side {
+    padding: 120px 0 80px 40px;
     flex: 1;
 
     min-height: 400px;
     border-left: 1px solid var(--line-color);
+}
+
+.subpage .side .lnb {
+    margin-bottom: 40px;
+}
+
+.subpage .side .lnb>ul {}
+
+.subpage .side .lnb>ul>li>a {
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px solid var(--line-color);
+    padding-left: 24px;
+}
+
+.subpage .side .lnb>ul>li.on>a {
+    background: #337689;
+    color: #fff;
 }

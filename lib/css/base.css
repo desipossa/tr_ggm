@@ -70,8 +70,21 @@
     width: 40px;
     height: 40px;
 
-    background: #ddd url(../../images/user-plus.svg) no-repeat center center;
+    background: #ddd url(../images/arrow-down.svg) no-repeat center center;
     border-radius: 50%;
+}
+
+.fx {
+    display: flex;
+    gap: 30px;
+}
+
+.fx>* {
+    flex: 1;
+}
+
+.fx img {
+    width: 100%;
 }
 
 .mb8 {
